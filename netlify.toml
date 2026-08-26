@@ -1,0 +1,11 @@
+[build]
+  publish = "."
+
+[functions]
+  directory = "netlify/functions"
+
+[functions."ingest-news"]
+  schedule = "*/15 * * * *"
+
+[functions."process-social-queue"]
+  schedule = "*/5 * * * *"
