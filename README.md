@@ -1,9 +1,39 @@
-# TECHPULSE
+# Oliver Tree — Life Archive Community Edition
 
-Technology news and history hub for Apple, Android, Windows, Samsung, Google, Microsoft, NVIDIA, AI, PC and gaming.
+## Pages
+- Home
+- Timeline
+- Music
+- Videos
+- Photos
+- Fan Forum
+- Source Library
 
-Supabase project: `ajpqgsqtjxpxubprjxjz`
+## Languages
+- Japanese
+- English
+- Spanish
+- Russian
 
-Netlify site: `os-now-news`
+Language choice is stored in localStorage and shared across all pages.
 
-The production app should keep secrets in Netlify environment variables and never expose Supabase service-role credentials in browser code.
+## Supabase
+Archive tables:
+- ot_timeline
+- ot_eras
+- ot_photos
+- ot_sources
+
+Forum tables:
+- ot_forum_posts
+- ot_forum_comments
+
+Forum access:
+- No login/account required
+- Name is optional; blank name becomes Anonymous
+- Public read + public insert
+- No public edit/delete, because there is no account identity to verify ownership
+- `is_hidden` exists for moderation by trusted/admin tooling
+
+## Vercel
+Static deployment. No build command is required.
